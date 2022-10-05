@@ -4,195 +4,526 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Yana's Japanese Resume</title>
     <style>
-        /* css Selector 選擇器  */
-        /* css Selector :Class選擇器  是可以疊加 很多個CLASS功能 請看下方*/
-    .title{
-        margin-bottom:10px;
-        font-size:24px;
-        font-weight:bold
-    }
-     
-    .container{
-  display:flex ;
-  justify-content:space-between ;
-  margin: 30px 0;
-  border: 1px solid #000;
-  Width:80%;
+
+
+* {
+  max-width:900px;
+  margin: auto;
   
-  margin:0 auto;
+}
+
+
+
+
+
+#header {
+  height: 40px;
+  width: 100%;
+  background-color: #ffcccc;
+  position: fixed;
+  z-index: 1;
+}
+
+#title {
+  margin-left: 3%;
+}
+
+#footer {
+
+  height: 40px;
+  width: 115%;
+  align-content;
+
+  background-color: #ffcccc;
+  clear: both;
+ /*position: relative;*/
+ position:relative;
+ display:inline-flex;
  
-/*   height: 100px; */
 }
-.box{
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-/*   height: 100px; */
+
+
+.left {
+  height: 9000px;
+  width: 45px;
+  background-color: #e0eeee;
+  float: left;
+  position: fixed;
 }
-.box.left{
-  flex: 1;
-  background-color: #01C2CB;
-  padding:10px;
-  align-content: space-betweenr;
- text-align:left;
+
+.right {
+  height: 7000px;
+  width: 45px;
+  background-color: #e0eeee;
+  float: right;
+  position: fixed;
+  /*position: inherit;*/
 
 }
-.box.right{
-  flex: 2;
+
+.stuff {
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 55px;
+  width: 80%;
+  height: 1000px;
   padding:10px;
- 
-  text-align:left;
 }
-.outside{
-    flex:1;
-    padding:20px;
-    border:5px solid #000;
+
+p,
+li {
+  font-family: 'Cormorant Garamond';
+}
+/*
+.head {
+  font-size: 20px;
+*/
+#name {
+  font-family: Sacramento;
+  float: right;
+  margin-top: 10px;
+  margin-right: 4%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+h3{letter-spacing:4px;}
+h2{letter-spacing:4px;}
+h4{letter-spacing:4px;
+    color:whitesmoke;}
+
+
+@media only screen and (max-width:480px) {
+  .left,
+  .right {
+    display: none;
+  }
   
-    margin:auto;
+  .stuff {
+    width: 100%;
+    margin-left: 10px;
+  }
 }
+.exp{
+  width: 600px;
+  height: 550px;
+  border: 2px solid chocolate;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color:darkcyan;
+  padding:30px;
+
+}
+.exp2{
+  width: 600px;
+  height: 950px;
+  border: 2px solid chocolate;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color:darkcyan;
+  padding:30px;
+
+}
+
+  
+
+
+.Part{
+  width: 600px;
+  height: 225px;
+  border: 0px solid chocolate;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color:pink;
+  padding:30px;
+  font-size:18px;
+  
+
+}
+/*
+.Part2{
+  width: 100px;
+  height: 50px;
+  border: 0px solid chocolate;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color:rgb(217, 148, 217);
+  padding:30px;
+  margin-left;
+  
+
+}
+
+*/
+
+.exp3{
+  width: 600px;
+  height: 320px;
+  border: 2px solid chocolate;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color:darkcyan;
+  padding:30px;
+  
+
+}
+
+
+.expCon{
+  font: size 18px;
+  letter-spacing:4px;
+
+}
+
     </style>
-    
 
 
 
 
 
 </head>
-<body  style="background-color:grey">
-    <script>
-
-
-    </script>
-</body>
-</html>
-
-
-
- 
-    <div class="outside"><!--outside--> 
+<body>
+    <div id="header"></div>
+    <div class="left"></div>
+    <div class="stuff">
+      <br/><br/><br/><br/>
 
 
 
-        <div class="container"><!--container--> 
-                <div class="box left">
-                  <h3>1.兩百字內的個人簡介。</h3>
-                </div>
+      <div style="font-size: 60px;overflow:visible">Resume</div>
+      <br/>
+      <div style="font-size:30px;overflow:visible">陳雅婷 </div>
+      <div style="font-size:30px;overflow:visible">Yana Chen</div>
+      <hr /><br/>
+      <div style="font-size:18px;color:gray;overflow:visible">Email:miyabi202@gmail.com</div>
+      <div style="font-size:18px;color:gray;overflow:visible">TEL:+886-953-805-202</div>
+      
+      <br>
 
-                <div class="box right">
-                  <p class="break normal">我是陳雅婷(Yana Chen)
-                    學生時代專業為國際貿易及日語,曾到日本留學1年;
-                    興趣是繪圖及天馬行空發想,曾獨力完成3D卡通製作,
-                    以下是我的各種作品:
-                   <a href ="http://youtu.be/8jQ2TFQWFjU" target="_blank">3D Animation作品</a>
-                   <a href ="https://photos.app.goo.gl/AuaCtmAQGMzQf8VY9" target="_blank">Painting </a>
-                    
-                    至今於科技產業從事設備代理銷售及中日口譯等經驗已長達17年2個月,擔任中日口譯時期參與上千廠的技術會議.
-                    並且其中長達7年左右,前後分別協助2家公司從0開始設立到成立後的各種營業活動及經營.
-                    
-                    目前人生規劃希望能成功轉職成為一名軟體工程師,認為軟體工程師的專業更具有累績的價值的,且能夠將所學教育自己的下一代,
-                    故近期已花費了將近4個月的期間學習以Java和JavaSfript為主的程式學習計畫,其他也包含css,jsp,Servelet等......</p>
-                </div>
 
-             
 
-    </div><!--container--> 
+<div class="Part">
+
+      <p style="font-size:30px">Interests</p>
+      <br/>
+      <ul>
+        <li>Drawing</li>
+      </br>
+        <li>Legos</li>
+    </br>
+        <li>Design</li></br>
+        <li>Computer Science</li></br>
+        <li>Animation,drama,flim</li>
+      </ul>
+    </div>
+
+
+<div class="Part">
+      <p style="font-size:30px">Skills</p>
+     </p>
+      <br/><br/>
+      <ul>
+        <li>日本語</li>
+      </br>
+        <li>英語</li><br/>
+        <li>WindowsOS, MacOS,Microsoft 365,Outlook, Adobe Photoshop, Illustrator, After Effect,Painter,Procreate,Java,HTML,CSS,JavaScript,etc...</li>
+      </ul>
+    </div>
+
+      <div class="Part">
+      <p style="font-size:30px">Education</p>
+      </br></br>
+      <ul>
+        <a href="https://www.au.edu.tw/">
+    <li>2000/09~2003/06&nbsp;&nbsp;&nbsp;&nbsp;ALETHEIA UNIVERSITY/真理大學</li>
+        </a>
+       </br>
+
+        <a href="https://www.jiu.ac.jp/englishsite/">
+            
+        <li>2001/06~2002/06 &nbsp;&nbsp;&nbsp;&nbsp;Josai international University/城西国際大学</li>
+            </a>
+
+
+        <br/>
+
+        <a href="https://www.takming.edu.tw/schtm/default.asp">
+          <li>
+            1995/06~2000/06&nbsp;&nbsp;&nbsp;&nbsp; PRIVATE TakMing Junior College of Commerce/
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;德明商專</li>
+        </a> </ul>
+
+
     
-    <div class="container"><!--container--> 
-        <div class="box left">
-          <h3>2.為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。</h3>
-        </div>
+    </div><br/><br/>
 
-        <div class="box right">
-          <p class="break normal">參加政府職訓的程式訓練(但第一次接觸到Java程式,整整三個月都花在熟悉Java語法及物件導向。
-            但後來覺得若要轉職應該是前端工程師的機會比較大,所以又到台大上彭彭老師的JavaSript課程,
-            最近也報名了台大資訊系統訓練班第369期的JavaScript與Reat網頁前端工程實務課程。
-            我目前也有安排自己在Coursera上進行一些相關JavaScript(Bootstrap等等)及UX Design等其他相關課程。
+      <div>
+      </br>
+ <p style="font-size:30px";>Experience</p><div>
+
+
+ <hr sytle="color:gray";></hr>
+      <div class="exp" ><h3>倍特爾科技有限公司</h3><br/>
+        <h3>BETTER SCIENCE TECHNOLOGY CO.,LTD  </h3>
+    
+        <br/><hr/> <br/>
+        <h4>2016/06-2021/09/30&nbsp;&nbsp;営業経理</h4>
+        <br/>
+        <p class="expCon">
             
-            目前主要都在學習狀態中,還沒有完整作品但新中有兩個想要製作網站:
-            (但需要有時間製作)
+        この会社が日本と台湾の合弁企業で、各国装置の代理店です。装置だけではなく、サービスと消耗品とパーツなども扱っています。
+        会社が装置代理店です。扱っている装置がSMT、PCB,パネル、半導体パッケージ・テスト、自動化関係などの工場に使われます。
+        
+        台湾の会社が2016年12月20日に成立したが、成立する半年前に既に入社し、台湾会社の成立準備の仕事に参加しました。
+        
+        会社案内と販売商品(装置、材料など…)のプレゼン資料やホームページ作成や会社設立の手続きや新規クライアント開発や輸入関係や価格ネゴや、
+        お金回収などの仕事を担当しました。この会社に勤めている際、台湾各地と中国とドイツと日本とシンガポールへ出張したこともあります。
+        
+        この仕事にて、営業能力や交渉の力や貿易知識や産業知識や語力(英語、日本語、中国語)などが必要とされています。</P></div>
+
+
+
+      <div class="exp2"><h3>大陽日酸系統科技股份有限公司 </h3></br><h3>Taiyo Nippon Sanso Engineering Taiwan,INC </h3><br/><hr/>
+        <br/> <h4>2015/04-2016/05&nbsp;&nbsp;営業副理</h4>
+        <br/>
+        <p class="expCon">
+          大手日系ロボット会社の代理店(日系企業)です。実は、私が太陽日酸グループの傘下にある会社『太陽日酸ガス＆ウェルティング』に所属しました。
+      <p>仕事内容：ロボットやシステムやモーターやパーツなどの販売</p>
+        </br>
+
+        <ol>
+<li>新たなビジネスを開拓。</li>
+<li>新規開発。 </li> 
+<li>FAE(装置関連の技術についての問い合わせ窓口)のような仕事も担当しました。</li>
+<li> 注文をもらった後、一連仕事(検収や入金回収など）などを含めて、担当をしました。。</li>
+<li>購買(物を仕入れて、再販売）及び、輸出と輸入貿易関係の仕事。</li>
+<li>書類作成：お見積書や会社案内のプレゼンや会社が扱った商品（装置と材料と消耗品など）のプレゼン資料を作成。市場調査。</li>
+<br/>
+
+★期間貢献：
+<br/>
+有名な靴製造会社へロボットを販売しました。当時、斬新なロボット制御方法のソフト開発に協力しました。
+この技術が当初に商品（Robot）になかったです。これが斬新的なロボット制御方法ーーパソコン言語（C＃、C++）を通じて、
+ロボットを制御する新応用方の実現に貢献が出来ました。
+
+</ol></p>   </div>
+
+
+
+
+      <div class="exp2"><h3>昱晶能源科技股份有限公司</h3></br><h3>GINTECH ENERGY CORPORATION</h3><br/><hr/>
+        <br/><h4>2014/05-2015/03&nbsp;&nbsp;<br/><br/>
+            Product and Customer Service Specialist</h4></br>
+      <P class="expCon">
+
+
+        この会社が太陽電池とモジュールの製造と販売する会社です。
+各大手太陽電池会社の合併により、現在GINTECH社がURE Corp（聯合再生能源股份有限公司）という会社になりました。
+
+        
+    </br>
+下記に記載しました。
+      </br> </br>
+      
+<ol>
+<li>製品の規格について、<br/>
+クライアント側が求める商品のスペックニーズ及び、当時市場にある商品の仕様を把握し、新商品設計に協力。   </li>       
+
+<li>新商品、新材料の導入について、<br/>
+    
+    1.新材料導入: 新材料に対し、工場側の導入スケジュール及び新材料のテスト進捗状況の把握。
+    2.毎回新材料で生産したい場合：クライアントに説明し、また新材料を使った製品のテストを依頼。
+    3.新材料を導入する際、我々の部門が工場（生産製造部門やRD部門や品質管理部門）を監督します。
+    要するに材料変更した商品（太陽電池）をまず少量生産させ、
+    結果に応じて大量生産に入れるかとの判断を我が部門で決めます。偶にRDと一緒に工場内で実験します。
+
+</br>
+③ご顧客様からの問題点＜クレーム＞について、 
+<li>各部門と話し合った上、調査結果＜情報＞をお客様に提供します。また、改善対策や分析のレポートを作成して、顧客様に送りします。</li>        
+
+<li>営業からお問い合わせに対して回答したり、社内に新製品情報を提供したりします。
+  また、営業から連絡した案件に対し、 受注を受けるいいかと社内各部門（製造部門、財務部門など）に検討してもらった評価結果を営業に伝えます。
+</li>
+
+<li>プレゼン資料などを作成し、定期的社内会議で報告します。</li>
+<li>お客様と一緒に工場監査やミィーティングします。</li>
+<li>運送中に製品破損が起こった場合、保険会社から補償金がもらえるように、資材部門に協力しました。
+  要するに、お客様からダメージした貨物の相関写真をまずもらい、品質管理部門と一緒に調査レポートを作成しました。
+</li>
+</ul>
+<br/>
+
+
+
+★期間貢献:
+<br/>
+<ol>
+<li>私の協力で資材が保険会社から補償金の申請ができて、当初NTD$ 40万元を頂きました。</li>
+<li>運送中に、製品の破損が起こった場合、社内の対応フローチャット（Flow Chart)を改善し、新たに作りました。
+</li>
+</ol>
+</div>
+
+<div class="exp3"><h3>緯創軟體股份有限公司</h3></br><h3>（Wistron ITS） </h3>
+
+<br/><hr/> <br/>
+<h4>2014/03-2014/04&nbsp;&nbsp;日本語　⇆　中国語の翻訳と通訳</h4><br/><br/>
+    
+<p class="expCon"> この部門が日系企業の各クライアント達が求めた彼ら自身専用のSAP（ERPのようなソフト）システムを開発する仕事を受けており、私がこの中に通訳や翻訳の役割を果たしました。
+
+  会社を辞めても、Wistron ITSの処長の依頼で、インタビュアーとして、人を面接しました。この求人者が日本のWistron ITS OFFICEで働きたい人です。 </p>
+  </div>
+
+
+
+  <div class="exp3"><h3>
+    全譜科技股份有限公司</h3></br><h3>（Pacific Image Electronic Co.Ltd） </h3>
+    <br/><hr/> <br/>
+    <h4>2013/05-2013/07&nbsp;&nbsp;海外営業</h4><br/>
+        
+    <p class="expCon">  
+        <ol>
+
+
+        <li>日本からのOEMとODM案件の開発と製造に協力。</li>
+        <li>OEM、ODMの注文をもらうための営業活動。</li>
+        <li>定期的に、日本のクライアントに訪問し、開発や生産の進捗状況など会議に参加しました。</li>
+        <li>クライアントとの定期的の電話会議に参加しました。</li>
+        <li>日本にある我が会社の代理店や商社との交流。</li>
+        <li>商品のRMA処理。
+        <li>日本出張   </ol> </p>
+      </div>
+      <div class="exp2"><h3>
+        惠虹光電科技有限公司</h3></br><h3>A.OPTEK(Advanced Optek Co.,Ltd)  </h3>
+        <br/><hr/> <br/>
+
+        <h4>2007/08-2013/04&nbsp;&nbsp;国内営業</h4><br/><br/>
+    
+    
+
             
-            1.關於地球行星及恐龍等知識,能夠透過互動方式讓小小孩學習並產生樂趣的知識的站(我有剛滿四歲的兒子)
-            就是我懂小孩也懂(像是我是作家這樣的角度的創作)
-            2.關於讓小孩也能有興趣並且可以增加知識的聖經相關學習網站(也可提供給主日學使用的網站)</p>
-        </div>
-    </div><!--container--> 
+        <p class="expCon">  
+          この会社がパネル業界に使われるメーン・プロセスに必要な工場向けの装置の代理店です。
+          当初、私が扱っている商品がEQ装置や自動化関連（Loader and UnLoader/Robot/Systemがあります。
+
+<br/><br/>
+            ★職務経歴内容及びこのポジションに必要とされる能力が下記に記載しております。
+<br/>
+<br/>
+<ol>
+<li>国内営業：国内営業を担当しました。</br>
+  　メーカーや我々代理店とクライアント達の最大利益を求めて、コツコツと行動します。</li>
+
+<li>クライアントとよい関係を維持するために取り組んでいます。</li>
+
+<li>既存のお客様から取引のチャンスを見付け、今までにない新ビジネスの開拓もしました。この期間にお客様の
+  ニーズに応じて、今までになかった装置を開発して、
+  当初成功的にお客様に２台を販売しました。今になってもお客様も買い続けてきているとのことです。</li>
+<li>日本語/中国語の通訳と翻訳の仕事を担当しました。</li>
+</li>
+<li>これから台湾にMove-inする装置状況を確認するため、立ち合いテストで日本メーカーの工場へお客様をつれ、何回も行きました。</li>
+<li>その他、装置の仕様確認や情報収集やお見積書とレポートと各書類などの作成や、取引先側とのネゴ、
+  色んな交渉や納期管理やアフタサービスや残件(問題点)処理や入金回収などの仕事も担当しました。</li>
+</ol>
+</br>
+</br>
+<p>★この期間にTouch Panel生産ライン（ROBOTとLoader/Unloader）の装置を
+  成功的に客様側の工場に出来ました。。（当然、受注を頂いた意味です。）</p>    
+  <br/>
+  <p>★この期間にお客様側の新プロセスニーズに応じて、当初今ま出になかった設計のSeal Dispenser 
+    （Drop Typeから印刷Typeにし）との装置を新たに作り出し、お客様の工場に成功的に２台導入しました。
+    今になっていても、お客様も買い続けている、とのことです。</p>
+
+</div>
+
+  <br/><br/> <br/>
+<div class="exp2"><h3>
+    惠虹光電科技有限公司</h3></br><h3>A.OPTEK(Advanced Optek Co.,Ltd)  </h3>
+
+    <br/> <br/>
+    <h4>2004/02-2007/08&nbsp;&nbsp;中国語　⇆ 日本語　の翻訳と通訳/ 秘書  </h4><br/><br/>
+    <p class="expCon">  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2004年2月に入社しました。この会社がパネル業者用の装置代理店です。職名が秘書だが、実際、日本語/中国の通訳などの仕事を担当しました。就職している間に殆ど土日なしで、しかもクライアントの工場の近くの社寮やアパートに長く住んでいました。
 
 
+    </br></br></br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;初期、私が自動化（LOADER AND UNLOADER　及びロボット及びシステム）系の通訳担当をしました。よって、色んなEQ装置メーカーさんと顧客様（Userさん、装置使用者)との会議が多くて、記憶では、平均に１日に３つの会議もあると覚えています。
 
-    <div class="container"><!--container--> 
-        <div class="box left">
-          <h3>3.如果參與這個計畫，會怎麼安排學習時間？</h3>
-        </div>
+会議以外に、毎日工場現場で装置のセットアップや通信テストがあり、もいっぱいあり、その時通訳の役割も果たしました。
 
-        <div class="box right">
-          <p class="break normal">我覺得最難的就是熟練語法然後使用他們,除了學習我希望也能完成上面我兩個想做的主題;
-            我思考許久,我想再多給自己多半年的期間來參加這個計畫來完成轉職,預計可使用的時間是小孩在幼稚園及睡覺的期間。
-            還有我喜歡學習並且學習力強和執行力高及具備恆心毅力(我也相當耐心)。
-            )</p>
-        </div>
-    </div><!--container--> 
+  </br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;翻訳と通訳の仕事以外に、工場側のUTILITY情報も常に把握し、装置のMOVE-INや組み立てなどのスケジュールやマンパワーの管理も仕事の一環です。
 
-<div class="container"><!--container--> 
-    <div class="box left">
-      <h3>4.是否有想要加入的軟體公司？為什麼想加入該公司？</h3>
+当初ON CALLの対応もしており、装置の問題点（残件）処理にも取り組んでいました。また、後輩の教育も担当したことがあります。当初もよくお客様を連れ、日本へ出張しました。
+
+</br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;この職で臨機応変の対応する力も身に付けました。
+</p></div>
+
+<br/><br/><br/> <br/>
+
+    <div style="float:left;width:100px;height:100px;border-radius:50%;padding: 1px;margin-top: 5px;background:rgb(217, 148, 217);font-size:30px;padding:1px;margin-top:2px;margin-left:2px">Autobiography</div>
+
+    <br/><br/><br/> <br/>
+    
+   </div>
+
+    <div style="font-size:18px;">
+        <br/><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私が前向きで、向上心があり、新しい物にチャンレジするのが好きで、ストレス耐性の高い人です。私が勉強好きで学習力も高いし、適応性もいい人です。学生時代私の専攻が国際貿易と日本語です。
+       
+        就職してからこの17年間ぐらいに、ずっとテクノロジー領域におり、この中の4年間ぐらいが日本語⇆中国語の通訳で、凡そ１年の製品とクライアントサービスのCSで、12.5年の営業をしたことがあります。
+       
+       重ねた就職経歴で、工場の運営についてのことを分かってきました。営業の仕事をする際に、営業だけではなく、購買（物を買い、再販売）の仕事と新しい装置を代理契約を結ぶ経験なども持っています。
+       
+       趣味として、私がWebsite作成とデザインと絵を描くことができ、プレゼンなどの書類作成するにも得意で経験も 多いです。
+       　
+       <P></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;テクノロジー領域というと、パネル、太陽電池、SMT、PCB、パッシブコンポーネント（
+        セラミックアンテナ、LED、MINI LEDと半導体パッケージング&テスティングなどがあります。一般産業だと、
+        靴製造業界や食品製造や車製造業界などがあります。</P><br/>
+       
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交換留学生として、日本で1年生活したことがあり、
+        この１年に学校の勉強以外に、日本各地への旅行もたくさんしました。色んな外国人の友達もできました。
+        学生時代において、美術、漫画研究、茶道のサークルに参加したことがあります。
+       
+
+    　　　</br></P>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>
+        交換留学生として、日本で1年生活したことがあり、この１年に学校の勉強以外に、日本各地への旅行もたくさんしました。色んな外国人の友達もできました。
+        学生時代において、美術、漫画研究、茶道のサークルに参加したことがあります。私の趣味が絵を書くことや、外国語の勉強です。
+    　</p>
+</br>
+</br>【下記が私の趣味で作った作品です。】　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+    </br>
+         Animation作品：<a herf="http://youtu.be/8jQ2TFQWFjU ">http://youtu.be/8jQ2TFQWFjU </a>
+         <br/><p>
+         Painting作品:<a href= "https://photos.app.goo.gl/AuaCtmAQGMzQf8VY9 ">https://photos.app.goo.gl/AuaCtmAQGMzQf8VY9
+        </p>
+         </a>
+        </br>
+        【下記が私が持った証明書です。】</br>
+        
+        <a href="https://photos.app.goo.gl/6fNXXemR9EZwytGm6">
+     https://photos.app.goo.gl/6fNXXemR9EZwytGm6。</a>
+        
+    
     </div>
+    <div></div>
+</br>
 
-    <div class="box right">
-      <p class="break normal">有,①當然和大家都一樣想加入知名外商的軟體公司。喜歡外商管理模式(把事情做好就好)和薪水好,福利好,工作生活易兼顧及平衡。
-        或者②能夠進入離家近的北投或關渡區域內的公司任職(縮短通勤時間,達到工作及生活平衡)
-        ③部分或完全遠端的工作(縮短通勤時間達到工作及生活平衡)</p>
-    </div>
-</div><!--container--> 
+<br/><br/><br/> <br/><br/>
+    
+   <!--<div class="right"></div>-->
 
+<div></div>
 
-<div class="container"><!--container--> 
-    <div class="box left">
-      <h3>5.請描述一件你曾經碰到最困難的事情，如何克服？</h3>
-    </div>
-
-    <div class="box right">
-      <p class="break normal">業務經驗,協助知名日本手臂大廠及台灣知名鞋廠的手臂新功能開發(透過電腦程式語言控制手臂導入生產製作),
-        因為完成此任務而得到訂單。</p>
-    </div>
-</div><!--container--> 
-
-<div class="container"><!--container--> 
-    <div class="box left">
-      <h3>6.關於這份申請網頁，請分享一個你開發時的技術心得。</h3>
-    </div>
-
-    <div class="box right">
-      <p class="break normal">我得知Wehelp計畫是在八月底左右得知的,在我思考是否報名參加徵選又猶豫一些時日,
-        當我下定決心報名後發現需要使用我尚完全不瞭解的GitHup Pages時候,我整晚研究它到隔天快凌晨05:00才睡覺;
-        目前我也是趁小孩在睡覺時,開始製作這一頁的回覆。但我發現我可以透過GitHup Pages讓自己製作及創作網頁被搜尋
-        道因此我馬上開始想要製作更多東西放置到網路上。</p>
-    </div>
-</div><!--container--> 
-
-<div class="container"><!--container--> 
-    <div class="box left">
-      <h3>7.從上次提出申請至今，多做了哪些努力？( 第一次申請不用回答 )</h3>
-    </div>
-
-    <div class="box right">
-      <p class="break normal"></p>
-    </div>
-</div><!--container--> 
-<div class="container"><!--container--> 
-    <div class="box left">
-      <h3>8.其他想要對我們說的事情？</h3>
-    </div>
-
-    <div class="box right">
-      <p class="break normal">Wehelp此項計畫是能夠於短期間內,幫助有心做夢的人實現改變及夢想的一項夢想實踐計畫!
-        真是太棒了!</p>
-    </div>
-</div><!--container--> 
-
-
-</div> <!--outside--> 
+    <div  id="footer">
+      <h2 id="name">Yana</h2></div>  
+      
 </body>
 </html>
